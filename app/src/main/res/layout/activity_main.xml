@@ -43,5 +43,10 @@
       android:layout_weight="1"
       android:gravity="center_horizontal"
       android:text="菜单三" />
+
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+   android:background="?android:attr/selectableItemBackground"/>
  </LinearLayout>
 </LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#ffffffff"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/rl_emergency_contact_title"
+        >
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btn_emergency_contact_back"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_emergency_contact_back"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="紧急联系人"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="55dp"
+            android:textColor="#008577"
+            android:layout_toRightOf="@+id/btn_emergency_contact_back"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/modify_back"
+            android:padding="5dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:id="@+id/ib_emergency_contact_modify"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@id/rl_emergency_contact_title"
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e0e0e0"
+        />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_add_emergency_contact"
+        android:text="添加联系人"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_emergency_contact_title"
+        android:layout_above="@+id/btn_add_emergency_contact"
+        >
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list_emergency_contact"
+            android:scrollbars="none"
+            android:divider="#e0e0e0"
+            android:background="#ffffffff"
+            android:listSelector="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/tv_no_one_emergency_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:drawableTop="@drawable/no_one_emergency_contact"
+            android:text="没有紧急联系人"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
